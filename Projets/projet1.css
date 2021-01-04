@@ -1,0 +1,14 @@
+#bienvenue-projet-1{
+    background: url('/assets/pictures/points.png'), center url('/assets/pictures/Projet1.JPG') no-repeat;
+    background-size: cover;
+    color:white;
+    height: 100vh;
+    width: auto;
+}
+
+#presentation{
+
+    padding-top: 60px;
+    text-align: center;
+}
+

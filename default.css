@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+    
+}
+body{
+        width: 100%;
+}
+
+.container {
+    margin: 0 auto; 
+    width: 90%;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: 900;
+
+}
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    flex-grow:1;
+}
+/* header */
+
+#bienvenue{
+    background: black;
+    color: white;
+    font-size: 1.1em;
+    padding-top: 15px;
+}
+
+#flex-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+
+nav a {
+    padding: 0px 15px;
+    color: white;
+    font-weight: 100;
+}
+
+nav a:hover {
+    color:red;
+}
+
+/* Présentation*/
+
+#flex-presentation{
+    width: 100%;
+    padding: 150px 0px;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.gauche-presentation{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.droite-presentation{  
+    width: 35%;
+    text-align: center;   
+}
+
+.droite-presentation img{   
+    width: 80%;
+}
+
+/* Créations */
+
+#creations{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#projet-grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px 250px;
+    gap: 30px;
+    
+}
+#projet-grille img{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border: 0px solid white;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+#projet-grille h3{
+    padding-left: 30px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    transform: translateY(-135px);
+}
+
+.element{
+    color:pink;
+}
+
+.picture {
+    height: 250px;
+    overflow: hidden;
+}
+
+.absolute{
+    color:pink;
+}
+/* contact */
+
+#contact{
+
+    text-align: center;
+    padding-top: 60px;
+}
+
+#contact p{
+
+    padding-top: 10px;
+    padding-bottom: 30px;
+} 
+
+#contact a{
+
+    padding: 15px 20px;
+    border: 1px solid black;
+    background: black;
+    color: white;
+
+}
+
+/* footer */
+
+footer {
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+footer span {
+    padding-bottom: 30px;
+}
+
+hr{
+    margin: 30px auto;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+/* Responsive Design */
+
+@media all and (max-width: 1130px) {
+
+    #projet-grille{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 250px 250px;
+        gap: 30px;
+        
+    }
+}
+
+@media all and (max-width: 730px) {
+
+    #projet-grille{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 250px 250px;
+        gap: 30px;
+        
+    }
+
+    .droite-presentation{  
+        display: none;   
+    }
+}
